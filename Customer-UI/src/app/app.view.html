@@ -1,24 +1,48 @@
-Customer Code :<input [(ngModel)]="CustomerModel.CustomerCode" type="text"/><br>
-Customer Name :<input [(ngModel)]="CustomerModel.CustomerName" type="text"/><br>
-Customer Amount :<input [(ngModel)]="CustomerModel.CustomerAmount" type="text"/><br>
 
-<input (click)="Add()" type="button" value="Add"/> <br>
-{{CustomerModel.CustomerCode}}<br>
-{{CustomerModel.CustomerName}}<br>
-{{CustomerModel.CustomerAmount}}<br>
+<div style="margin:auto; border: 5px solid; width: 20%;padding: 10px; background-color: aquamarine;">
+  <h2 style="color:blue; text-align: center;">My Customer Application</h2>
+    <table>
+      <tr>
+        <td>
+          Customer Code
+        </td>
+        <td>
+          <input [(ngModel)]="CustomerModel.CustomerCode" type="text"/>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Customer Name
+        </td>
+        <td>
+          <input [(ngModel)]="CustomerModel.CustomerName" type="text"/>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Customer Amount
+        </td>
+        <td>
+          <input [(ngModel)]="CustomerModel.CustomerAmount" type="text"/>
+        </td>
+      </tr>
+    </table>
+    <div style="margin:auto; width: 10%; padding: 20px;">
+      <input (click)="Add()" type="button" value="Add"/> <br>
+    </div>
 
 
-<table>
-  <th>Costumer Information</th>
-  <tr >
-    <td>CustomerCod</td>
-    <td>CustomerName</td>
-    <td>CustomerAmount</td>
-  </tr>
-  <tr *ngFor="let cust of CustomerModels">
-    <td>{{cust.CustomerCode}}</td>
-    <td>{{cust.CustomerName}}</td>
-    <td>{{cust.CustomerAmount}}</td>
-  </tr>
-</table>
+    <table>
+      <tr>
+        <td style="padding:10px; color:blue">CustomerCod</td>
+        <td style="padding:10px; color:blue">CustomerName</td>
+        <td style="padding:10px; color:blue">CustomerAmount</td>
+      </tr>
+      <tr *ngFor="let cust of CustomerModels">
+        <td style="text-align: center; color:red">{{cust.CustomerCode}}</td>
+        <td style="text-align: center; color:red">{{cust.CustomerName}}</td>
+        <td style="text-align: center; color:red">{{cust.CustomerAmount}}</td>
+      </tr>
+    </table>
 
+</div>

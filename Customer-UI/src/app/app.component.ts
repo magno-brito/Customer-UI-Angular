@@ -12,6 +12,7 @@ export class CustomerComponent {
   Add(){
     this.CustomerModels.push(this.CustomerModel);
     this.CustomerModel = new Customer();// clear the UI
+    
 
   }
 }
