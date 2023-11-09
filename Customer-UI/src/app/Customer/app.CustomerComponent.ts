@@ -3,7 +3,7 @@ import {Customer} from "./app.model";
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.view.html',
+  templateUrl: './app.CustomerView.html',
 })
 export class CustomerComponent {
   title = 'Customer-UI';
@@ -12,7 +12,7 @@ export class CustomerComponent {
   Add(){
     this.CustomerModels.push(this.CustomerModel);
     this.CustomerModel = new Customer();// clear the UI
-    
+
 
   }
 }
