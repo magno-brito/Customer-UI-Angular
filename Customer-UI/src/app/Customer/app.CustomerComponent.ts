@@ -4,6 +4,7 @@ import {Customer} from "./app.model";
 @Component({
   templateUrl: './app.CustomerView.html',
 })
+// skcdk
 export class CustomerComponent {
   title = 'Customer-UI';
   CustomerModel : Customer = new Customer();
